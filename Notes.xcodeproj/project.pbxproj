@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BB10F9212A78C11700D126ED /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10F9202A78C11700D126ED /* NotesApp.swift */; };
-		BB10F9232A78C11700D126ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10F9222A78C11700D126ED /* ContentView.swift */; };
+		BB10F9232A78C11700D126ED /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10F9222A78C11700D126ED /* Home.swift */; };
 		BB10F9252A78C11800D126ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB10F9242A78C11800D126ED /* Assets.xcassets */; };
 		BB10F9292A78C11800D126ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB10F9282A78C11800D126ED /* Preview Assets.xcassets */; };
 		BB10F9332A78C11800D126ED /* NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10F9322A78C11800D126ED /* NotesTests.swift */; };
 		BB10F93D2A78C11800D126ED /* NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10F93C2A78C11800D126ED /* NotesUITests.swift */; };
 		BB10F93F2A78C11800D126ED /* NotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10F93E2A78C11800D126ED /* NotesUITestsLaunchTests.swift */; };
+		BB7A987C2A82F26D00982E34 /* UpdateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A987B2A82F26D00982E34 /* UpdateNoteView.swift */; };
+		BBD2E5A42A81B6DF0094C709 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2E5A32A81B6DF0094C709 /* AddNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		BB10F91D2A78C11700D126ED /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB10F9202A78C11700D126ED /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
-		BB10F9222A78C11700D126ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB10F9222A78C11700D126ED /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		BB10F9242A78C11800D126ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB10F9262A78C11800D126ED /* Notes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notes.entitlements; sourceTree = "<group>"; };
 		BB10F9282A78C11800D126ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +47,9 @@
 		BB10F9382A78C11800D126ED /* NotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB10F93C2A78C11800D126ED /* NotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesUITests.swift; sourceTree = "<group>"; };
 		BB10F93E2A78C11800D126ED /* NotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB7A987B2A82F26D00982E34 /* UpdateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNoteView.swift; sourceTree = "<group>"; };
+		BBD2E5A22A7C51DD0094C709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BBD2E5A32A81B6DF0094C709 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +100,11 @@
 		BB10F91F2A78C11700D126ED /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				BBD2E5A32A81B6DF0094C709 /* AddNoteView.swift */,
+				BB7A987B2A82F26D00982E34 /* UpdateNoteView.swift */,
+				BBD2E5A22A7C51DD0094C709 /* Info.plist */,
 				BB10F9202A78C11700D126ED /* NotesApp.swift */,
-				BB10F9222A78C11700D126ED /* ContentView.swift */,
+				BB10F9222A78C11700D126ED /* Home.swift */,
 				BB10F9242A78C11800D126ED /* Assets.xcassets */,
 				BB10F9262A78C11800D126ED /* Notes.entitlements */,
 				BB10F9272A78C11800D126ED /* Preview Content */,
@@ -259,8 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB10F9232A78C11700D126ED /* ContentView.swift in Sources */,
+				BBD2E5A42A81B6DF0094C709 /* AddNoteView.swift in Sources */,
+				BB10F9232A78C11700D126ED /* Home.swift in Sources */,
 				BB10F9212A78C11700D126ED /* NotesApp.swift in Sources */,
+				BB7A987C2A82F26D00982E34 /* UpdateNoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +429,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -457,6 +469,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
